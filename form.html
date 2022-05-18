@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/reset.css">
+        <link rel="stylesheet" href="estilos/style.css">
+        <title>Suscribirse a El Diarito</title>
+    </head>
+    <body>
+        <div class="formstyle">
+            <form>
+            <h1>Suscribirse a las notificaciones de El Diarito</h1>
+                <fieldset>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name">
+                </fieldset>
+                <fieldset>
+                    <label for="surname">Apellido: </label>
+                    <input type="text" name="surname" id="surname">
+                </fieldset>
+                <fieldset>
+                    <label for="email"><span>*</span> E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <label for="noticias">Recibir noticias cada: </label>
+                    <select name="noticias" id="city">
+                        <option value="1d">1 día</option>
+                        <option value="3d">3 días</option>
+                        <option value="7d">7 días</option>
+                        <option value="15d">15 días</option>
+                        <option value="1m">1 mes</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="">Género: </label>
+                    <input type="radio" name="genero" id="radioBtnM" checked>
+                    <label for="radioBtnM">Masculino</label>
+                    <input type="radio" name="genero" id="radioBtnF">
+                    <label for="radioBtnF">Femenino</label>
+                </fieldset>
+                <fieldset>
+                    <label for="chkBtn"><span>*</span> He leído y acepto los <a href="#">términos de suscripción a noticias</a></label>
+                    <input type="checkbox" name="terminos" id="chkBtn" required>
+                </fieldset>              
+                <input class="btn" type="submit" value="Suscribirse">
+            </form>
+            <p>Los campos marcados con (<span>*</span>) son obligatorios.</p>
+        </div>
+    </body>
+</html>
