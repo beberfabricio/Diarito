@@ -166,9 +166,8 @@ form .btn{
     display:flex;
     margin: 10px;
     height: 90px;
-    width: 85%;
-    padding: 20px;
-    padding-top: 25px;
+    width: 95%;
+    padding: 10px;
     border:0.5px;
     align-items: center;
     justify-content: center;
@@ -179,10 +178,10 @@ form .btn{
     display:flex;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 }
 .field label{
-    width: 80%;
+    width: 100%;
     font-size: 15px;
     padding-top: 5px;
     text-align: center;
@@ -261,6 +260,9 @@ form .col-der{
       }
       form{
           max-width: 70%;
+      }
+      .fields .txt{
+          width: 80%;
       }
   }
   
