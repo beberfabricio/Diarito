@@ -125,7 +125,7 @@ main .publicidad img{
 
 form{
     background-color: lightblue;
-    width: 50%;
+    width: 80%;
     padding: 15px;
     border-radius: 7%;
     margin: 15px;
@@ -144,15 +144,14 @@ form{
 .formstyle p{
     font-size: 13px;
     font-style: oblique;
-    margin-top: 5px;
-}
-.formstyle span{
-    color:red;
+    margin-bottom: 8px;
 }
 
 form h1{
+    width: 90%;
     font-size: 40px;
     text-align: center;
+    margin: 20px;
 }
 form .btn{
     border-radius: 20px;
@@ -163,18 +162,57 @@ form .btn{
     padding: 8px;
     margin: 10px;
 }
-form fieldset{
+.fields{
+    display:flex;
     margin: 10px;
-    height: 80px;
-    width: 45%;
+    height: 90px;
+    width: 85%;
     padding: 20px;
     padding-top: 25px;
     border:0.5px;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border-style: dashed;
 }
-
+.field{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+.field label{
+    width: 80%;
+    font-size: 15px;
+    padding-top: 5px;
+    text-align: center;
+    color:red;
+}
+.fields .txt{
+    width: 90%;
+    height: 35px;
+    border-radius: 20px;
+    border:0px;
+    padding: 10px;
+    font-size: 15px;
+}
+form .col-izq{
+    width: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form .col-der{
+    width: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hidden{
+    display:none;
+}
 @media only screen and (min-width: 768px) {  
     h1{
         font-size: 90px;
@@ -193,6 +231,18 @@ form fieldset{
         margin-left: 2px;
         margin-right: 2px;
     }
+    form{
+        flex-direction: row;
+    }
+    form .fields label{
+        width: 100%;
+    }
+    form .col-der{
+        width: 50%;
+    }
+    form .col-izq{
+        width: 50%;
+    }
   }
 
   @media only screen and (min-width: 1024px) {
@@ -210,8 +260,7 @@ form fieldset{
           display:block;
       }
       form{
-        width: 50%;
-        flex-direction: row;
+          max-width: 70%;
       }
   }
   
